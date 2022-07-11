@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import AllRoutes from "./routes";
+import StylesGlobal from "./StylesGlobal";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-    </div>
+    <BrowserRouter>
+      <StylesGlobal />
+      <AllRoutes />
+    </BrowserRouter>
   );
 }
 
