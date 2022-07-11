@@ -13,13 +13,15 @@ function Showcase() {
     <Container>
       <Content>
         {products.map(({ name, abv, image_url, description, id }) => (
-          <ListProducts
-            key={id}
-            name={name}
-            abv={abv}
-            image_url={image_url}
-            description={description}
-          />
+          <>
+            <ListProducts
+              key={id}
+              name={name}
+              abv={abv}
+              image_url={image_url}
+              description={description}
+            />
+          </>
         ))}
       </Content>
     </Container>

@@ -1,3 +1,4 @@
+import { Button } from "../Button /index.jsx";
 import { Container } from "./style.js";
 
 function ListProducts({ name, abv, image_url, description }) {
@@ -7,6 +8,8 @@ function ListProducts({ name, abv, image_url, description }) {
       <span> ABV: {abv}%</span>
 
       <p>{description}</p>
+
+      <Button>Adicionar </Button>
     </Container>
   );
 }
