@@ -10,6 +10,7 @@ export const Container = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 
   img {
     max-width: 80px;

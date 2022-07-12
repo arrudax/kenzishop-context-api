@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
-export const Container = styled.ul`
-  max-width: 600px;
-  width: 100%;
-  
-
-`;
-
-export const Content = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+`;
+
+export const Content = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: center;
+
+  max-width: 700px;
+  width: 100%;
 `;

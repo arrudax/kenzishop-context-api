@@ -1,7 +1,12 @@
+import {  CartProvider } from "./cart";
 import { BeerProvider } from "./ProductsBeer";
 
 function Providers({ children }) {
-  return <BeerProvider>{children}</BeerProvider>;
+  return (
+    <BeerProvider>
+      <CartProvider>{children}</CartProvider>
+    </BeerProvider>
+  );
 }
 
 export default Providers;
